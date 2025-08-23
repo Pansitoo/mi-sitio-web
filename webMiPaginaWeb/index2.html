@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño con Flexbox</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background: #333;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .container {
+            display: flex;
+            margin: 20px;
+            gap: 20px;
+        }
+        .main-content {
+            flex: 2;
+            background: #f4f4f4;
+            padding: 20px;
+        }
+        .sidebar {
+            flex: 1;
+            background: #ddd;
+            padding: 20px;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mi Sitio Web</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Acerda de</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <section class="main-content">
+            <h2>Bienvenido</h2>
+            <p>Este es un diseño básico utilizando Flexbox.</p>
+        </section>
+        <aside class="sidebar">
+            <h2>Barra Lateral</h2>
+            <p>Contenido adicional.</p>
+        </aside>
+    </div>
+    <footer>
+    <p>&copy; 2025 Mi Sitio Web | Desarrollado por Esteban Ruiz</p>
+</footer>
+</body>
+</html>
