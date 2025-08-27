@@ -1,0 +1,16 @@
+.layout{
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "aside main"
+        "footer footer";
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: auto 1fr auto;
+    gap: 10px;
+    height: 100vh;
+}
+
+header{grid-area: header; background: #ccc;}
+aside{grid-area: aside; background: #18cae9;}
+main{grid-area: main; background: #a7d93b;}
+footer{grid-area: footer; background: #d850f7;}
