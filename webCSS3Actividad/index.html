@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Actividad</title>
+  <link rel="stylesheet" href="main.css" />
+</head>
+<body>
+  <div class="layout">
+    <header>
+      <h1>Encabezado Principal</h1>
+      <img src="imagine/imagen1.jpg" alt="Imagen Principal" />
+    </header>
+
+    <aside>
+      <nav>
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#gallery">Galería</a></li>
+          <li><a href="#calendar">Calendario</a></li>
+          <li><a href="#free-composition">Dashboard</a></li>
+          <li><a href="#videos">Videos</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main>
+      <!-- Galería -->
+      <section id="gallery" class="gallery">
+        <h2>Galería de Imágenes</h2>
+       <div class="grid-gallery">
+         <div class="card"><img src="imagine/imagen1.jpg" alt="Foto 1" /></div>
+         <div class="card"><img src="imagine/imagen2.jpg" alt="Foto 2" /></div>
+         <div class="card"><img src="imagine/imagen3.jpg" alt="Foto 3" /></div>
+         <div class="card"><img src="imagine/imagen4.jpg" alt="Foto 4" /></div>
+        </div>
+      </section>
+
+      <!-- Calendario Semanal -->
+      <section id="calendar" class="calendar">
+        <h2>Calendario Semanal</h2>
+        <div class="day day1">Lunes</div>
+        <div class="day day2">Martes</div>
+        <div class="day day3">Miércoles</div>
+        <div class="day day4">Jueves</div>
+        <div class="day day5">Viernes</div>
+        <div class="day day6">Sábado</div>
+        <div class="day day7">Domingo</div>
+      </section>
+
+      <!-- Composición Libre (Dashboard) -->
+      <section id="free-composition" class="free-composition">
+        <h2>Composición Libre</h2>
+        <div class="block1">Los peces globo pueden inflarse y doblar varias veces su tamaño para evitar depredadores</div>
+        <div class="block2">Algunos peces como el pez arquero disparan chorros de agua para cazar insectos fuera del agua</div>
+        <div class="block3">Los peces linterna tienen la capacidad de producir luz bioluminiscente para camuflarse en el océano profundo</div>
+        <div class="block4">Existen más de 33,000 especies de peces con gran diversidad de tamaños, colores y formas en el mundo</div>
+      </section>
+
+      <!-- Textos y Videos -->
+      <section id="videos" class="text-video">
+        <h2>Videos</h2>
+        <p>Datos curiosos del oceano</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/IVARo0TFR2s?si=opeml8Ao9fxKkWcj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>   
+        </iframe>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 | Desarrollado por Esteban Ruiz</p>
+    </footer>
+  </div>
+</body>
+</html>
